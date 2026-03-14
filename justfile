@@ -30,7 +30,7 @@ gen:
 # build and run gator
 run *args:
     #!/usr/bin/env nu
-    go build -o {{root}}/gator {{root}}/cmd; if $env.LAST_EXIT_CODE == 0 { {{root}}/gator {{args}} }
+    go build -o {{root}}/gator {{root}}/cmd/gator; if $env.LAST_EXIT_CODE == 0 { {{root}}/gator {{args}} }
 
 # run all tests
 test:
@@ -40,4 +40,4 @@ test:
 # build release binary
 release-build:
     #!/usr/bin/env nu
-    go build -o gator-linux-amd64 ./cmd
+    go build -o gator-linux-amd64 ./cmd/gator

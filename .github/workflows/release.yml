@@ -45,3 +45,6 @@ jobs:
       - uses: softprops/action-gh-release@v2
         with:
           files: gator-linux-amd64
+          generate_release_notes: true
+          body: |
+            > **Platform support:** Linux (amd64) only for now. See the README for installation instructions.

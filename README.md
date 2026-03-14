@@ -10,7 +10,7 @@ CLI RSS feed aggregator built in Go. Boot.dev backend track — [course link](ht
 ## Installation
 
 ```
-go install github.com/ibrais/gator/cmd@latest
+go install github.com/ibrais/gator/cmd/gator@latest
 ```
 
 This installs the `gator` binary to your `$GOPATH/bin`. Make sure that directory is on your `$PATH`.
